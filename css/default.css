@@ -1,0 +1,543 @@
+ body {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+}
+.light-mode {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+.buttonhome {
+  position: relative;
+  background-image: url('https://cdn.statically.io/gh/defiminds/portal/main/css/defiminds.jpeg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  border: none;
+  color: #FFFFFF;
+  height: 77px;
+  width: 111px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+  	*  { font-family: 'Segoe UI'; font-size: 15px; }
+    
+    #divResize1
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize2
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize3
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize4
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize5
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize6
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize7
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize8
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize9
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize10
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize11
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize12
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize13
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize14
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize15
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize16
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize17
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize18
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize19
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize20
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize21
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize22
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize23
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize24
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize25
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize26
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize27
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize28
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize29
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize30
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize31
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize32
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize33
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize34
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize35
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize36
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize37
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize38
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize39
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize40
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize41
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize42
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize43
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize44
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize45
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize46
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize47
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize48
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize49
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize50
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
+    #divResize51
+    { 
+      border: dashed 1px #ccc; 
+      width: 120px; 
+      height: 120px; 
+      padding: 5px; 
+      margin: 5px; 
+      cursor: move; 
+      float: left;
+    }
