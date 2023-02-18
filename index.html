@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="./css/default.css">
+<link rel="stylesheet" href="./css/qr-code.css">
+<head>
+<title>NFT</title>
+<meta charset="utf-8" name="viewport" content="width=100%, height=100%, initial-scale=1" http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" http-equiv="Pragma" content="no-cache" http-equiv="Expires" content="1" />
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link href="./css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="./js/elements.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/JsBarcode.all.min.js"></script>
+<script src="./js/barcode2.js"></script>
+<script src="./js/blockctrl.js"></script>
+</head>
+
+<body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+<p class="prevent-select" style='float: left; padding-bottom: 20px;margin-top: 0.3%;'>
+<button onclick="onelement2()">QrCode</button>
+<button onclick="onelement3()">LatLng</button>
+<button onclick="onelement1()">Barcode</button>
+<button onclick="onelement4()">IMG Encode</button>
+<button onclick="onelement5()">PGP Suite</button>
+<button onclick="onelement10()">ChaTor</button>
+<a href="./bimg.html"><button>Decode Image</button></a>
+<button onclick="lights()">Lights</button>
+</p>
+ 
+<div id="divResize1" style="position: absolute; left: 382.667px; top: 553.15px; width: 544px; height: 219px; display: block;">
+<div style="display:none;"><p id="myText">copy(`Object.entries(${JSON.stringify(localStorage)}) .forEach(([k,v])=>localStorage.setItem(k,v))`)</p></div>
+<button class="btn" onclick="copyContent()">Backup | CTRL+V Console</button>
+<button class="btn" onclick="clearContent()">Clear localStorage</button>
+    <svg class="prevent-select" id="barcode" />
+    <input autofocus id="ean" placeholder="PARTNUMBER"/>
+    <ul class="prevent-select" id="history"></ul>
+<script>
+  let text = document.getElementById('myText').innerHTML;
+  const copyContent = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      console.log('Content copied to clipboard');
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  }
+const clearContent = async () => {
+    try {
+      await localStorage.clear();
+      console.log('LocalStorage Cleared');
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  }
+</script>
+</div> 
+
+<div id="divResize2" style="position: absolute; left: 213px; top: 552px; height: 226px; width: 170px; display: block;">
+<iframe style="width: 100%; height: 100%" src="./qrcode.html"></iframe>
+</div> 
+
+<div id="divResize3" style="position: absolute; left: -9px; top: 554px; height: 225px; width: 220px; display: block;">
+<iframe style="width: 100%; height: 100%" src="./latlng.html"></iframe>
+</div> 
+
+<div id="divResize4" style="position: absolute; left: -2px; top: 775px; height: 224px; width: 382px; display: block;">
+<p class="prevent-select">1. Convert image data to base64 by image url</p>
+<input type="text" placeholder="image url" class="url">
+<button class="convert">convert to base64</button>
+<p class="prevent-select">
+2. Convert image selected from local to base64;
+<p>
+<input type="file" accept="image/*" class="local" />
+<p class="prevent-select">3.Convert clipboard's image data to base64;</p>
+<button class="clipboard">from clipboard</button>
+<script>
+function convertImageToBase64(imgUrl, callback) {
+  const image = new Image();
+  image.crossOrigin='anonymous';
+  image.onload = () => {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.height = image.naturalHeight;
+    canvas.width = image.naturalWidth;
+    ctx.drawImage(image, 0, 0);
+    const dataUrl = canvas.toDataURL();
+    callback && callback(dataUrl)
+  }
+  image.src = imgUrl;
+}
+
+document.querySelector(".convert").onclick = () => {
+  const url = document.querySelector(".url").value;
+  if (!url) {
+    alert('please input image url')
+    return;
+  }
+  if (!url.startsWith('http')) {
+    alert('invalid image url');
+    return;
+  }
+  convertImageToBase64(url, console.log);
+}
+
+
+const $file = document.querySelector(".local");
+$file.addEventListener("change", (event) => {
+    const selectedfile = event.target.files;
+    if (selectedfile.length > 0) {
+      const [imageFile] = selectedfile;
+      const fileReader = new FileReader();
+      fileReader.onload = () => {
+        const srcData = fileReader.result;
+        console.log('base64:', srcData)
+      };
+      fileReader.readAsDataURL(imageFile);
+    }
+  });
+
+document.querySelector('.clipboard').onclick = async function parseClipboardImageData() {
+  const items = await navigator.clipboard.read()
+  for (let item of items) {
+    for (let type of item.types) {
+      if (type.startsWith("image/")) {
+        return item
+          .getType(type)
+          .then(blob => {
+            return new Promise((resolve) => {
+              const fileReader = new FileReader();
+              fileReader.onload = () => {
+                const srcData = fileReader.result;
+                resolve(srcData);
+              };
+              fileReader.readAsDataURL(blob);
+            })
+          }).then(console.log)
+      }
+    }
+  }
+}
+</script>
+
+</div> 
+
+<div id="divResize5" style="position: absolute; left: -7px; top: 28px; height: 527px; width: 565px; display: block;">
+<iframe style="width: 100%; height: 100%" src="./pgp.html"></iframe>
+</div> 
+
+<div id="divResize6" style="position: absolute; left: 557px; top: 27px; height: 527px; width: 685px; display: block;">
+<iframe style="width: 100%; height: 100%" src="http://chatorcvcl25nskltysozugy36pplnrwpbgwovh6mbwwzy2bzgq2hkyd.onion/dashboard.php"></iframe>
+</div> 
+
+</body>
+
+<script type="text/javascript" src="./js/lights.js"></script>
+<script type="text/javascript" src="./js/mr.js"></script>
+</html>
