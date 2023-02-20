@@ -10,6 +10,15 @@
   background-size: cover;
   background-color: black;
 }
+label, textarea {
+  display: block;
+}
+
+textarea {
+  margin: 15px 0;
+  width: 250px;
+  height: 100px
+}
 .buttonhome {
   position: relative;
   background-image: url('https://cdn.statically.io/gh/defiminds/portal/main/css/defiminds.jpeg');
