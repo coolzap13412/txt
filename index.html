@@ -18,13 +18,14 @@
 <body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
 <p class="prevent-select" style='float: left; padding-bottom: 20px;margin-top: 0.3%;'>
 <button onclick="onelement2()">QrCode</button>
-<button onclick="onelement3()">LatLng</button>
+<button onclick="onelement3()">SQrCode</button>
 <button onclick="onelement1()">Barcode</button>
 <button onclick="onelement4()">IMG Encode</button>
 <button onclick="onelement5()">PGP Suite</button>
 <button onclick="onelement10()">ChaTor</button>
 <a href="./call.html"><button>Call</button></a>
 <a href="./bimg.html"><button>Decode Image</button></a>
+<a href="./latlng.html"><button>LAT/LNG</button></a>
 <a href="./qrcodes.html" target="_blank" rel="noopener noreferrer"><button>QRCode Scanner</button></a>
 <a href="https://codeload.github.com/f43ae2567b9e9ab0984069d1017be715/txt/zip/refs/heads/main" target="_blank" rel="noopener noreferrer"><button>Download</button></a>
 <button onclick="lights()">Lights</button>
@@ -63,7 +64,7 @@ const clearContent = async () => {
 </div> 
 
 <div id="divResize3" style="position: absolute; left: -9px; top: 554px; height: 225px; width: 220px; display: block;">
-<iframe style="width: 100%; height: 100%" src="./latlng.html"></iframe>
+<iframe style="width: 100%; height: 100%" src="./qrcodes.html"></iframe>
 </div> 
 
 <div id="divResize4" style="position: absolute; left: -2px; top: 775px; height: 224px; width: 382px; display: block;">
